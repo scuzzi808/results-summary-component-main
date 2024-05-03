@@ -43,11 +43,11 @@ main {
 
 /* text styles */
 h4 {
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0 0 20px 0;
 }
 
 h2 {
+    margin: 1rem 0;
     font-weight: 800;
     font-size: 2rem;
     color: white;
@@ -142,8 +142,8 @@ h2 {
 /* summary styles */
 
 .summary {
-    margin:10px 0;
-    width: 60%;
+    /* margin:10px 0; */
+    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
@@ -203,7 +203,13 @@ button:hover {
     .wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        min-width: 200px;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        min-width: none;
+    }
+    .results, .summary {
+        width: 100%;
     }
 }
