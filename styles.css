@@ -77,6 +77,7 @@ h2 {
     font-weight: 800;
 }
 
+
 .item1 {
     color: var(--light-red);
 }
@@ -103,7 +104,7 @@ h2 {
 }
 
 .grey-text {
-    color: var(--light-lavender);
+    color: var(--dark-gray-blue);
 }
 
 .wrapper {
@@ -146,23 +147,41 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 
 .summary-score {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     padding: 5px 10px;
-    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .score-right {
-    margin-bottom: 20px;
+    margin: 1rem 0;
+    padding: 10px 15px;
+    font-size: bold;
     display: flex;
     justify-content: space-between;
+    border-radius: 10px;
+}
+
+.scr-r1 {
+    background: rgba(255, 87, 87, 0.1);
+}
+
+.scr-r2 {
+    background: rgba(255, 176, 31, 0.1);
+}
+
+.scr-r3 {
+    background: rgba(0, 189, 145, 0.1);
+}
+
+.scr-r4 {
+    background: rgba(17, 37, 212, 0.1);
 }
 
 button {
@@ -170,9 +189,14 @@ button {
     font-size: 18px;
     background-color: var(--dark-gray-blue);
     border: none;
-    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 15px 30px;
     border-radius: 10rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(var(--slate-blue), var(--royal-blue));
 }
 
 @media (max-width: 500px) {
